@@ -1,4 +1,6 @@
-import LocomotiveScroll from 'locomotive-scroll';
+import LocomotiveScroll from './node_modules/locomotive-scroll/src/locomotive-scroll';
+
+const scroll = new LocomotiveScroll();
 
 console.log("test");
 
