@@ -1,0 +1,167 @@
+.container {
+  margin-top: 10vh;
+}
+
+.container .hero {
+  height: 100vh;
+  grid-template-columns: 60% 40%;
+  display: grid;
+}
+
+.container .hero .copy {
+  height: 100%;
+  align-content: center;
+  padding: 0 1rem;
+  display: grid;
+}
+
+.container .hero .copy blockquote {
+  font-size: 6vmin;
+  font-weight: 300;
+}
+
+.container .hero .copy blockquote span {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.container .hero .copy blockquote cite {
+  padding: 8px 0;
+  font-size: 4.5vmin;
+  font-style: italic;
+  font-weight: 300;
+  display: block;
+}
+
+.container .hero .image-wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.container .hero .image-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container .section-0 {
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.container .section-0 p {
+  font-size: 5vw;
+}
+
+.container .section-0 cite {
+  font-size: 3vw;
+}
+
+.container .section-1 {
+  height: 100vh;
+  place-content: center;
+  padding: 0 1rem;
+  display: grid;
+}
+
+.container .section-1 .image-mask {
+  width: 80vw;
+  height: 80vh;
+  background-color: #fff;
+  background-position: 50% 90%;
+  background-size: 100%;
+}
+
+.container .section-1 .image-mask img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container .section-1 blockquote {
+  font-size: 9vmin;
+  font-weight: 300;
+}
+
+.container .section-1 blockquote span {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.container .section-1 blockquote cite {
+  padding: 8px 0;
+  font-size: 7.5vmin;
+  font-style: italic;
+  font-weight: 300;
+  display: block;
+}
+
+.container .section-2 {
+  height: calc(300vh + 48px);
+  grid-template-columns: 40% 60%;
+  display: grid;
+}
+
+.container .section-2 blockquote {
+  padding: 16px 16px 0;
+  font-size: 5vmin;
+}
+
+.container .section-2 blockquote cite {
+  display: block;
+}
+
+.container .section-2 .images-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 16px;
+  padding: 0 8px;
+  display: grid;
+}
+
+.container .section-2 .images-container img {
+  width: 100%;
+  max-height: 75vh;
+  height: 100%;
+  object-fit: cover;
+  align-self: stretch;
+}
+
+.container .section-3 {
+  height: 100vh;
+  grid-template-columns: 40% 60%;
+  display: grid;
+  position: relative;
+}
+
+.container .section-3 .image-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.container .section-3 .image-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container .section-3 .copy {
+  height: 100vh;
+  width: 100%;
+  align-content: center;
+  font-size: 8vmin;
+  display: grid;
+}
+
+.container .section-3 .copy blockquote {
+  margin: 0 32px;
+}
+
+.container .section-3 .copyright {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  font-size: 4vmin !important;
+}
+
+/*# sourceMappingURL=index.74d016ac.css.map */

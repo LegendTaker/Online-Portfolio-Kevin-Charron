@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "locomotive-scroll": "^4.1.4"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
   }
 }
