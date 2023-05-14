@@ -1,22 +1,22 @@
 .container {
-  margin-top: 10vh;
+  margin-top: 1vh;
 }
 
 .container .hero {
-  height: 100vh;
-  grid-template-columns: 60% 40%;
-  display: grid;
+  height: 50vh;
+  flex-direction: column;
+  display: flex;
 }
 
 .container .hero .copy {
-  height: 100%;
+  text-align: center;
   align-content: center;
-  padding: 0 1rem;
-  display: grid;
+  padding: 2rem 0;
+  font-size: calc(6vmin + .390625vw);
 }
 
 .container .hero .copy blockquote {
-  font-size: 6vmin;
+  font-size: calc(6vmin + .390625vw);
   font-weight: 300;
 }
 
@@ -34,14 +34,18 @@
 }
 
 .container .hero .image-wrapper {
-  height: 100vh;
-  width: 100%;
+  width: auto;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .container .hero .image-wrapper img {
   height: 100%;
-  width: 100%;
-  object-fit: cover;
+  width: auto;
+  border-radius: 70px;
+  box-shadow: 0 5px 5px #0003;
 }
 
 .container .section-0 {
@@ -162,6 +166,20 @@
   bottom: 5%;
   left: 50%;
   font-size: 4vmin !important;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.shown-5s {
+  opacity: 1;
+  transition: opacity 3s;
+}
+
+.shown-7s {
+  opacity: 1;
+  transition: opacity 3s 1s;
 }
 
 /*# sourceMappingURL=index.74d016ac.css.map */

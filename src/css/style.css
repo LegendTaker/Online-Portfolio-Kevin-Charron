@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../../fonts/PPNeueMachina-PlainRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Cormorant Garamond';
+  font-family: 'MyCustomFont', sans-serif;;
 }
 
 body{
   background-image: url('../../images/bg_normal.jpg');
   background-size: cover;
   background-position: center;
-  font-family: var(--font-NeueMachina),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 
@@ -22,20 +27,20 @@ body{
 }
 
 .main-area{
-  width: 80%;
-  height: 100vh;
+  width: 60%;
+  height: 80vh;
 }
 
 .header {
+  font-weight: 400;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   z-index: 1000;
   color: #222;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
   padding: 1.5vh 0;
   width: 50%;
   height: 8vh;
-  position: fixed;
   background-image: url('../../images/herringbone.webp');
 }
 
@@ -45,9 +50,7 @@ ul {
 
 .navigation{
   display: flex;
-  flex-direction: row;
   justify-content: center; /* center items horizontally */
-  align-items: center; /* center items vertically */
 }
 
 .navigation ul li {
@@ -74,4 +77,22 @@ ul {
   padding-left: var(--bs-gutter-x,.75rem);
   margin-right: auto;
   margin-left: auto;
+}
+
+.bottom
+{
+  font-weight: 400;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: #222;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 0 0;
+  width: 50%;
+  height: 8vh;
+  background-image: url('../../images/herringbone.webp');
+}
+
+.data-scroll-container{
+  display: flex;
+  flex-direction: column;
 }
