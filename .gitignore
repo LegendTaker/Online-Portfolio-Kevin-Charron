@@ -1,12 +1,6 @@
 # Parcel cache and output directories
-.cache/
-dist/
-
-# Node.js dependencies
-node_modules/
-
-# Environment variables
-.env
+.parcel-cache\
+dist\
 
 # Editor and IDE specific files
 .vscode/

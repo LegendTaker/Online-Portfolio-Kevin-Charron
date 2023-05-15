@@ -24,6 +24,10 @@ body{
   background-position: center;
 }
 
+
+.data-scroll-container{
+  width: 100%;
+}
 .wrapper-mid{
   display: flex;
   flex-direction: column;
