@@ -1,0 +1,27 @@
+# Parcel cache and output directories
+.cache/
+dist/
+
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Editor and IDE specific files
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# OS and system files
+.DS_Store
+Thumbs.db
+
+# Build artifacts and generated files
+*.bundle.js
+*.map
+
+# Other project-specific files or directories you want to exclude

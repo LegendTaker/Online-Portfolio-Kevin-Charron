@@ -57,7 +57,6 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
 }
 .side-area-1{
   width: 20%;
