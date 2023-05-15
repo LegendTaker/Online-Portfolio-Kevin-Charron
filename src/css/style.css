@@ -5,12 +5,17 @@
   font-style: normal;
 }
 
+a[href] {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'MyCustomFont', sans-serif;;
+  font-family: 'MyCustomFont', sans-serif;
 }
 
 body{
@@ -19,16 +24,43 @@ body{
   background-position: center;
 }
 
-
-.wrapper{
+.wrapper-mid{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.wrapper-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 20%;
+}
+
+.wrapper-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 20%;
 }
 
 .main-area{
   width: 60%;
   height: 80vh;
+}
+
+.main-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.side-area-1{
+  width: 20%;
 }
 
 .header {
@@ -38,8 +70,7 @@ body{
   z-index: 1000;
   color: #222;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
-  padding: 1.5vh 0;
-  width: 50%;
+  width: 70%;
   height: 8vh;
   background-image: url('../../images/herringbone.webp');
 }
@@ -49,34 +80,34 @@ ul {
 }
 
 .navigation{
+  height: 100%;
+  width: auto;
   display: flex;
-  justify-content: center; /* center items horizontally */
+  justify-content: space-around;
+  align-items: center;
 }
 
-.navigation ul li {
+
+button {
+  background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.597);
-  margin-right: 2rem;
-  margin-left: 1rem;
-  display: inline-block;
-  padding: .7rem .9rem;
+  margin-right: calc(3vmin + 0.390625vw);
+  margin-left: calc(3vmin + 0.390625vw);
+  padding: .7rem 0.5rem;
   text-decoration: none;
   transition: transform 0.2s ease-in-out;
   box-shadow: inset 0 0 10px #000000;
   border-radius: 20px;
+  font-size: calc(1.2vmin + 0.390625vw);
+  width: 20%;
+  height: auto;
 }
-.navigation ul li:hover {
+
+button:hover {
   background-color: #59595948;
   color: #000000ef;
   transform: scale(0.95);
   cursor: default;
-}
-
-.container-header {
-  width: 100%;
-  padding-right: var(--bs-gutter-x,.75rem);
-  padding-left: var(--bs-gutter-x,.75rem);
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .bottom
@@ -92,7 +123,26 @@ ul {
   background-image: url('../../images/herringbone.webp');
 }
 
-.data-scroll-container{
-  display: flex;
-  flex-direction: column;
+
+
+/* test area */
+
+
+/* .scroll-content {
+  position: relative;
+  height: fit-content; 
+  animation: scroll-animation 10s linear infinite; 
 }
+
+.scroll-text {
+  writing-mode: vertical-rl; 
+}
+
+@keyframes scroll-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+} */
