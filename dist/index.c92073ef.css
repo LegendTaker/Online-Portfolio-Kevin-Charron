@@ -29,16 +29,13 @@ body {
 }
 
 .wrapper-mid {
-  height: 100vh;
-  width: 100%;
   flex-direction: column;
   align-items: center;
   display: flex;
 }
 
 .wrapper-left, .wrapper-right {
-  height: 100vh;
-  width: 20%;
+  width: 20vh;
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -62,7 +59,7 @@ body {
 .header {
   z-index: 1000;
   color: #222;
-  width: 70%;
+  width: 50%;
   height: 8vh;
   background-image: url("herringbone.68a4911d.webp");
   border-bottom-right-radius: 50px;
