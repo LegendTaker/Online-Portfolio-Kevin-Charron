@@ -5,6 +5,12 @@
   font-style: normal;
 }
 
+a[href] {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,15 +24,36 @@ body {
   background-size: cover;
 }
 
-.wrapper {
+.data-scroll-container {
+  width: 100%;
+}
+
+.wrapper-mid {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.wrapper-left, .wrapper-right {
+  width: 20vh;
   flex-direction: column;
   align-items: center;
   display: flex;
 }
 
 .main-area {
-  width: 60%;
-  height: 80vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-wrapper {
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+}
+
+.side-area-1 {
+  width: 20%;
 }
 
 .header {
@@ -37,7 +64,6 @@ body {
   background-image: url("herringbone.68a4911d.webp");
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
-  padding: 1.5vh 0;
   font-weight: 400;
   box-shadow: 0 5px 5px #0003;
 }
@@ -47,35 +73,33 @@ ul {
 }
 
 .navigation {
-  justify-content: center;
+  height: 100%;
+  width: auto;
+  justify-content: space-around;
+  align-items: center;
   display: flex;
 }
 
-.navigation ul li {
+button {
+  width: 20%;
+  height: auto;
+  background: none;
   border: 1px solid #00000098;
   border-radius: 20px;
-  margin-left: 1rem;
-  margin-right: 2rem;
-  padding: .7rem .9rem;
+  margin-left: calc(3vmin + .390625vw);
+  margin-right: calc(3vmin + .390625vw);
+  padding: .7rem .5rem;
+  font-size: calc(1.2vmin + .390625vw);
   text-decoration: none;
   transition: transform .2s ease-in-out;
-  display: inline-block;
   box-shadow: inset 0 0 10px #000;
 }
 
-.navigation ul li:hover {
+button:hover {
   color: #000000ef;
   cursor: default;
   background-color: #59595948;
   transform: scale(.95);
-}
-
-.container-header {
-  width: 100%;
-  padding-right: var(--bs-gutter-x, .75rem);
-  padding-left: var(--bs-gutter-x, .75rem);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .bottom {
@@ -90,9 +114,33 @@ ul {
   box-shadow: 0 1px 4px #00000029;
 }
 
-.data-scroll-container {
-  flex-direction: column;
+.scroll-content {
+  height: 100vh;
+  flex-direction: row;
+  animation: 10s linear infinite scroll-animation;
   display: flex;
+  position: fixed;
+}
+
+.scroll-text, .scroll-text-1, .scroll-text-2 {
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+}
+
+@keyframes scroll-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 }
 
 /*# sourceMappingURL=index.c92073ef.css.map */

@@ -564,13 +564,25 @@ const scroller = new (0, _locomotiveScrollDefault.default)({
     el: document.querySelector("[data-scroll-container]"),
     smooth: true
 });
-const nextButton = document.getElementById("next-section");
-nextButton.addEventListener("click", ()=>{
-    const currentSection = scroller.scroll.instance.scroll.y;
-    const nextSection = document.querySelectorAll("[data-scroll-section]")[currentSection + 1];
-    console.log(nextSection.length);
-    if (nextSection) scroller.scrollTo(nextSection);
+const navLinks = document.querySelectorAll("button");
+navLinks.forEach((link)=>{
+    link.addEventListener("click", (e)=>{
+        e.preventDefault();
+        const targetId = link.getAttribute("href");
+        if (targetId == 0) scroller.scrollTo(0);
+        else scroller.scrollTo(targetId);
+    });
+}); /* to be tested and worked out :( 
+const nextButton = document.getElementById('next-section');
+nextButton.addEventListener('click', () => {
+  const currentSection = scroller.scroll.instance.scroll.y;
+  const nextSection = document.querySelectorAll('[data-scroll-section]')[currentSection + 1];
+  console.log(nextSection.length);
+  if (nextSection) {
+    scroller.scrollTo(nextSection);
+  }
 });
+*/ 
 
 },{"locomotive-scroll":"iDXE3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iDXE3":[function(require,module,exports) {
 /* locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

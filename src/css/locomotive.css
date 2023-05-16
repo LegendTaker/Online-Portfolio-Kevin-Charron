@@ -1,11 +1,13 @@
 .container{
   margin-top: 1vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container .hero {
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  height: auto;
 }
 .container .hero .copy {
   align-content: center;
@@ -42,8 +44,8 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
 }
 .container .section-0 {
-  margin-top: 20vh;
   text-align: center;
+  margin-top: 5vh;
 }
 .container .section-0 p {
   font-size: 5vw;

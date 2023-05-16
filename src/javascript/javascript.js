@@ -7,8 +7,21 @@ const scroller = new LocomotiveScroll({
 })
 
 
+const navLinks = document.querySelectorAll('button');
 
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href');
+    if(targetId ==0)
+    {
+        scroller.scrollTo(0)
+    }
+    else scroller.scrollTo(targetId);
+  });
+});
 
+/* to be tested and worked out :( 
 const nextButton = document.getElementById('next-section');
 nextButton.addEventListener('click', () => {
   const currentSection = scroller.scroll.instance.scroll.y;
@@ -18,3 +31,4 @@ nextButton.addEventListener('click', () => {
     scroller.scrollTo(nextSection);
   }
 });
+*/
