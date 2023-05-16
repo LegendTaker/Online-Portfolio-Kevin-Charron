@@ -49,8 +49,8 @@ body{
 }
 
 .main-area{
-  width: 60%;
-  height: 80vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .main-wrapper{
@@ -127,21 +127,42 @@ button:hover {
 /* test area */
 
 
-/* .scroll-content {
-  position: relative;
-  height: fit-content; 
+.scroll-content {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  height: 100VH; 
   animation: scroll-animation 10s linear infinite; 
 }
 
+
 .scroll-text {
   writing-mode: vertical-rl; 
+  white-space: nowrap; /* Prevent line breaks */
 }
+
+.scroll-text-1 {
+  writing-mode: vertical-rl; 
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.scroll-text-2 {
+  writing-mode: vertical-rl; 
+  white-space: nowrap; /* Prevent line breaks */
+}
+
 
 @keyframes scroll-animation {
   0% {
+    opacity: 0;
     transform: translateY(0);
   }
+
+  50% {
+    opacity: 1;
+  }
   100% {
+    opacity: 0;
     transform: translateY(-100%);
   }
-} */
+}

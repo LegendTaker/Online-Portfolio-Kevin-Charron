@@ -1,6 +1,8 @@
 # Parcel cache and output directories
 .parcel-cache/
+.parcel-cache\
 dist/
+dist\
 # Editor and IDE specific files
 .vscode/
 .idea/
