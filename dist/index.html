@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="/index.c92073ef.css">
     <link rel="stylesheet" href="/index.d046a61c.css">
     <link rel="stylesheet" href="/index.74d016ac.css">
+    <script nomodule="" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+    <script nomodule="" src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
     <script src="/index.e9fa0288.js" defer="">
 </script>
     <title>Portfolio</title>
@@ -20,9 +22,25 @@
         <div class="wrapper-mid">
           <section class="header">
               <nav class="navigation">
-                    <button href="0">About</button>
+                <div class="dropdown"> 
+                 <button href="0">About</button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>   
+                <div class="dropdown"> 
                     <button href="#section-2">Projects</button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                  <div class="dropdown"> 
                     <button href="#section-3">Contact</button>
+                  </div>
                 </nav>
             </section>
           <section class="main-area">
@@ -42,14 +60,12 @@
                     </div>
         
                     <div class="section-0" data-scroll="" data-scroll-speed="2">
-                        <p data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="-2">
-                            test scrolling
+                        <p data-scroll-class="shown" class="hidden" data-scroll="" data-scroll-repeat="" data-scroll-direction="horizontal" data-scroll-speed="-1">
+                            About
                         </p>
-                        <p data-scroll="" data-scroll-direction="horizontal" data-scroll-speed="2">
-                            test scroll 2
+                        <p data-scroll-class="shown" class="hidden" data-scroll="" data-scroll-repeat="" data-scroll-direction="horizontal" data-scroll-speed="1">
+                            Me 
                         </p>
-        
-                        <cite>—me</cite>
                     </div>
         
                     <div class="section section-1">

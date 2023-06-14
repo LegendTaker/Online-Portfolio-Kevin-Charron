@@ -5,7 +5,7 @@
 }
 
 .container .hero {
-  height: auto;
+  height: 95vmin;
   flex-direction: column;
   display: flex;
 }
@@ -177,6 +177,11 @@
 .shown-5s {
   opacity: 1;
   transition: opacity 3s;
+}
+
+.shown {
+  opacity: 1;
+  transition: opacity 2s;
 }
 
 .shown-7s {

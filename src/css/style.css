@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'MyCustomFont';
-  src: url('../../fonts/PPNeueMachina-PlainRegular.otf') format('opentype');
+  font-family: "MyCustomFont";
+  src: url("../../fonts/PPNeueMachina-PlainRegular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -11,54 +11,53 @@ a[href] {
   display: block;
 }
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'MyCustomFont', sans-serif;
+  font-family: "MyCustomFont", sans-serif;
 }
 
-body{
-  background-image: url('../../images/bg_normal.jpg');
+body {
+  background-image: url("../../images/bg_normal.jpg");
   background-size: cover;
   background-position: center;
 }
 
-
-.data-scroll-container{
+.data-scroll-container {
   width: 100%;
 }
-.wrapper-mid{
+.wrapper-mid {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.wrapper-left{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 20vh;
-}
-
-.wrapper-right{
+.wrapper-left {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 20vh;
 }
 
-.main-area{
+.wrapper-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vh;
+}
+
+.main-area {
   width: 100%;
   height: 100vh;
 }
 
-.main-wrapper{
+.main-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.side-area-1{
+.side-area-1 {
   width: 20%;
 }
 
@@ -67,39 +66,45 @@ body{
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   z-index: 1000;
-  color: #222;
+  color: #036d19;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
   width: 50%;
   height: 8vh;
-  background-image: url('../../images/herringbone.webp');
+  background-image: url("../../images/herringbone.webp");
 }
 
 ul {
   list-style: none;
 }
 
-.navigation{
+.navigation {
   height: 100%;
   width: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
-
 
 button {
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.597);
-  margin-right: calc(3vmin + 0.390625vw);
-  margin-left: calc(3vmin + 0.390625vw);
-  padding: .7rem 0.5rem;
+  padding: calc(0.5vmin + 0.390625vw) calc(0.5vmin + 0.390625vw);
   text-decoration: none;
   transition: transform 0.2s ease-in-out;
   box-shadow: inset 0 0 10px #000000;
   border-radius: 20px;
-  font-size: calc(1.2vmin + 0.390625vw);
+  font-size: calc(1.5vmin + 0.390625vw);
+  width: 100%;
+  height: auto;
+}
+
+.dropdown {
+  margin-right: calc(3vmin + 0.390625vw);
+  margin-left: calc(3vmin + 0.390625vw);
   width: 20%;
   height: auto;
+  max-width: 17vmin;
+  position: relative;
 }
 
 button:hover {
@@ -109,8 +114,7 @@ button:hover {
   cursor: default;
 }
 
-.bottom
-{
+.bottom {
   font-weight: 400;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -119,50 +123,51 @@ button:hover {
   padding: 0 0;
   width: 50%;
   height: 8vh;
-  background-image: url('../../images/herringbone.webp');
+  background-image: url("../../images/herringbone.webp");
 }
 
-
-
 /* test area */
-
 
 .scroll-content {
   display: flex;
   flex-direction: row;
   position: fixed;
-  height: 100VH; 
-  animation: scroll-animation 10s linear infinite; 
+  height: 100vh;
+  animation: scroll-animation 10s linear infinite;
 }
 
-
 .scroll-text {
-  writing-mode: vertical-rl; 
+  writing-mode: vertical-rl;
   white-space: nowrap; /* Prevent line breaks */
 }
 
 .scroll-text-1 {
-  writing-mode: vertical-rl; 
+  writing-mode: vertical-rl;
   white-space: nowrap; /* Prevent line breaks */
 }
 
 .scroll-text-2 {
-  writing-mode: vertical-rl; 
+  writing-mode: vertical-rl;
   white-space: nowrap; /* Prevent line breaks */
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 80%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-@keyframes scroll-animation {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
 
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
+button:hover + .dropdown-content {
+  display: block;
 }
