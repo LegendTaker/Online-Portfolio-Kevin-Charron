@@ -5,8 +5,8 @@
 }
 
 .container .hero {
-  height: 95vmin;
   flex-direction: column;
+  height: 95vmin;
   display: flex;
 }
 
@@ -36,17 +36,17 @@
 }
 
 .container .hero .image-wrapper {
-  width: auto;
-  height: 50vh;
   justify-content: center;
   align-items: center;
+  width: auto;
+  height: 50vh;
   display: flex;
 }
 
 .container .hero .image-wrapper img {
-  height: 100%;
-  width: auto;
   border-radius: 70px;
+  width: auto;
+  height: 100%;
   box-shadow: 0 5px 5px #0003;
 }
 
@@ -64,24 +64,24 @@
 }
 
 .container .section-1 {
-  height: 100vh;
   place-content: center;
+  height: 100vh;
   padding: 0 1rem;
   display: grid;
 }
 
 .container .section-1 .image-mask {
-  width: 80vw;
-  height: 80vh;
   background-color: #fff;
   background-position: 50% 90%;
   background-size: 100%;
+  width: 80vw;
+  height: 80vh;
 }
 
 .container .section-1 .image-mask img {
-  height: 100%;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .container .section-1 blockquote {
@@ -103,8 +103,8 @@
 }
 
 .container .section-2 {
-  height: calc(300vh + 48px);
   grid-template-columns: 40% 60%;
+  height: calc(300vh + 48px);
   display: grid;
 }
 
@@ -126,35 +126,35 @@
 }
 
 .container .section-2 .images-container img {
-  width: 100%;
-  max-height: 75vh;
-  height: 100%;
   object-fit: cover;
   align-self: stretch;
+  width: 100%;
+  height: 100%;
+  max-height: 75vh;
 }
 
 .container .section-3 {
-  height: 100vh;
   grid-template-columns: 40% 60%;
+  height: 100vh;
   display: grid;
   position: relative;
 }
 
 .container .section-3 .image-wrapper {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .container .section-3 .image-wrapper img {
-  height: 100%;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .container .section-3 .copy {
-  height: 100vh;
-  width: 100%;
   align-content: center;
+  width: 100%;
+  height: 100vh;
   font-size: 8vmin;
   display: grid;
 }
